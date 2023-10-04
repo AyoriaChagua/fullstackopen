@@ -1,0 +1,25 @@
+# Logs
+part1/part01/logs
+part1/part01/*.log
+part1/part01/npm-debug.log*
+part1/part01/yarn-debug.log*
+part1/part01/yarn-error.log*
+part1/part01/pnpm-debug.log*
+part1/part01/lerna-debug.log*
+
+# Node modules and build artifacts
+part1/part01/node_modules
+part1/part01/dist
+part1/part01/dist-ssr
+part1/part01/*.local
+
+# Editor directories and files
+part1/part01/.vscode/*
+!part1/part01/.vscode/extensions.json
+part1/part01/.idea
+part1/part01/.DS_Store
+part1/part01/*.suo
+part1/part01/*.ntvs*
+part1/part01/*.njsproj
+part1/part01/*.sln
+part1/part01/*.sw?
