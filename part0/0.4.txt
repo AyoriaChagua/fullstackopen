@@ -1,0 +1,13 @@
+# Al dar click se hace una solicitud POST al servidor
+browser->server: HTTP POST https://studies.cs.helsinki.fi/exampleapp/new_note
+# Dependiendo de lo que pase dentro del servido, se devolverá un código HTTP
+server-->code 302
+# El proceso se repite 
+browser->server: HTTP GET /notes
+server-->browser: HTML
+browser->server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/main.css
+server-->browser: main.css
+browser->server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/main.js
+server-->browser: main.js
+browser->server: HTTP GET https://studies.cs.helsinki.fi/exampleappdata.json
+server-->browser: [{ content: "HTML is easy", date: "2019-05-23" }, ...]

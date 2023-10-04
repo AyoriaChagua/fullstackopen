@@ -1,0 +1,3 @@
+# se envia un JSON 
+browser->server: HTTP POST https://studies.cs.helsinki.fi/exampleapp/new_note_spa headers:{...} body:{...}
+server-->browser: CODE 201
